@@ -1,0 +1,23 @@
+/* Button.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Satisfy&display=swap');
+
+.buttonBlack {
+    display: inline-block;
+    padding: 1vh 2vw;
+    font-size: 2vh;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Satisfy', cursive;
+
+  }
+  
+  .buttonBlack:hover {
+    background-color: #C19A6B;
+    color: white;
+  }
+  
