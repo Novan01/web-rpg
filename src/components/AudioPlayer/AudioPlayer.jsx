@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 
+
 function AudioPlayer() {
   useEffect(() => {
-    const audio = new Audio('/music/backgroundMusic.mp3');
+    const audio = new Audio('music/backgroundMusic.mp3');
     audio.volume = 0.1;
     audio.loop = true;
 
