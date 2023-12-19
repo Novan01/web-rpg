@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was created using React.js and MongoDB
+This project was created using React.js and MongoDB by Patrick Anderson and Jonah Getz
 
 # Goal
 
