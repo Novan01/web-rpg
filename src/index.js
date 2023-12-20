@@ -12,5 +12,5 @@ root.render(
       <Paths />
     </React.StrictMode>
     </>
-    );
+);
 
