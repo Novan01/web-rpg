@@ -1,11 +1,11 @@
 # Getting Started with Create React App
 
-This project was created using React.js and MongoDB by Patrick Anderson and Jonah Getz
+This project was created using the MERN stack by Patrick Anderson and Jonah Getz
 
 # Goal
 
-I plan to write and create a web based RPG similar to Dunegons and Dragons, both code and story written by me. I want to use this project to pracitce React, full stack development, and writing.
+Our plan is to write and create a web based RPG similar to Dunegons and Dragons that allows for seemingly infinite choices and a responsive world that changes according to the players actions. We want to use this project to practice full stack development and AI integration. 
 
 # Development
 
-This project is planned to be worked on during the Christmas break of 2023
+This project began development during Christmas 2023
