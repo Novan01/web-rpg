@@ -29,9 +29,9 @@ function SettingsPage() {
     return (
         <div className="background-image-book settings-page">
             <div className="settings-container">
-                <h1>Settings</h1>
+                <h2>Settings</h2>
                 <div className="volume-section">
-                    <h2>Volume</h2>
+                    <h3>Volume</h3>
                     <p>Current Volume: {volume}%</p>
                     <div className="slider"><input id="slider" type="range" value={volume} onChange={handleVolumeChange} min={0} max={100} /></div>
                 </div>
