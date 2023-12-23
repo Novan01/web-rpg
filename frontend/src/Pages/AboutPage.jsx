@@ -1,10 +1,9 @@
 import React from 'react';
-import './AboutPage.css';
-import LinkButtonWhite from "../../components/ButtonsWhite/LinkButtonWhite";
+import LinkButtonWhite from "../components/ButtonsWhite/LinkButtonWhite";
 
 function AboutPage() {
     return (
-    <div className='about-page'>
+    <div className='background-image-forest about-page'>
         <div className='about-page-container'>
             <h1>Welcome to TexVenture</h1>
             <p>

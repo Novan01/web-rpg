@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import './SettingsPage.css';
-import Button from '../../components/ButtonBlack/LinkButtonBlack';
-import AudioPlayer from "../../components/AudioPlayer/AudioPlayer";
+import Button from '../components/ButtonBlack/LinkButtonBlack';
+import AudioPlayer from "../components/AudioPlayer/AudioPlayer";
 
 function SettingsPage() {
     const [volume, setVolume] = useState(10);
@@ -28,7 +27,7 @@ function SettingsPage() {
     };
 
     return (
-        <div className="settings-page">
+        <div className="background-image-book settings-page">
             <div className="settings-container">
                 <h1>Settings</h1>
                 <div className="volume-section">

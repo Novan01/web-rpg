@@ -1,9 +1,8 @@
 import React from "react";
-import './MainMenu.css';
 
 const MainMenu = () => {
     return(
-        <div className = "main-menu">
+        <div className = "background-image-forest main-menu">
             <div className = "main-menu-container"> 
                 <h1 className = "game-title">TexVenture</h1>
                 <ul className = "menu-options">

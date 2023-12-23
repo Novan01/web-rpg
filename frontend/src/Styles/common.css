@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Satisfy&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Satisfy', cursive;
+    cursor: default;
+    margin: 0;
+}
+
+.background-image-forest {
+    background: url('../assets/images/main_menu_forest_background.jpg') center/cover no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: absolute; /* Set the position of the container to absolute */
+}
+
+.background-image-book {
+    background: url('../assets/images/old-book-open-dark-wood-background.jpg') center/cover no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: absolute; /* Set the position of the container to absolute */
+}
+
+h1 {
+    color: #fff;
+    font-size: 10vw;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 2em;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+}
+ 
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3vw;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+}
