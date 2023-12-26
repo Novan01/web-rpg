@@ -1,8 +1,8 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import MainMenu from './Pages/MainMenu';
 import AboutPage from './Pages/AboutPage';
-import SettingsPage from "./Pages/SettingsPage";
 import WelcomePage  from "./Pages/WelcomePage";
+import PlayGamePage from './Pages/PlayGamePage';
 import CreatePage from "./Pages/CreatePage";
 import Layout from "../src/Layout";
 
@@ -28,18 +28,18 @@ const Paths = () => {
           }
         />
         <Route
-          path="/settings"
-          element={
-            <Layout>
-              <SettingsPage />
-            </Layout>
-          }
-        />
-        <Route
           path="/create"
           element={
             <Layout>
               <CreatePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/play"
+          element={
+            <Layout>
+              <PlayGamePage />
             </Layout>
           }
         />

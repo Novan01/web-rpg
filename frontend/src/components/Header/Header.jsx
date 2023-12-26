@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/*This is the header that when creating a character or playing the game will be displayed. Allows for adjusting volume, quiting the game, going to specific pages etc WIP */
 const Header = () => {
   const handleExitClick = () => {
     // Add logic to handle exit button click (e.g., close the game)

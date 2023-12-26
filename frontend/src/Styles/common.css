@@ -5,6 +5,7 @@ body {
     font-family: 'Satisfy', cursive;
     cursor: default;
     margin: 0;
+    position: absolute; /* Set the position of the container to absolute */
 }
 
 .background-image-forest {
@@ -30,6 +31,10 @@ h2 {
     font-size: 6vw;
 }
 
+h3 {
+    font-size: 2vw;
+}
+
 input {
     font-size: .7vw;
 }
@@ -42,19 +47,15 @@ label {
 ul {
     list-style-type: none;
     font-size: 2em;
-    padding: 0;
+    display: inline-block;
 }
 
-li {
-    margin: 15px 0;
-}
  
 a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-size: 3vw;
-    display: block;
     transition: color 0.3s ease;
 }
 
@@ -64,4 +65,44 @@ p {
 
 a:hover {
     color: #ffd700;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 8vw;
+      -webkit-appearance: none;
+      background-color: #9a905d;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #6E260E;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #6E260E;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #6E260E; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #6E260E; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #9a905d;
 }

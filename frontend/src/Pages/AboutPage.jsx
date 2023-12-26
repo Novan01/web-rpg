@@ -2,7 +2,7 @@ import React from 'react';
 import LinkButtonWhite from "../components/ButtonsWhite/LinkButtonWhite";
 
 import '../Styles/AboutPage.css';
-import '../Styles/common.css'
+import '../Styles/common.css';
 
 function AboutPage() {
     return (

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import '../Styles/common.css';
+import '../Styles/CreatePage.css';
 
 /*
 Character creation - saved to JSON (MongoDB)
@@ -103,13 +105,13 @@ function CreatePage() {
 
     return (
         <div className="character-creator">
-            <h1>Create your Character</h1>
+            <h3>Create your Character</h3>
             <form onSubmit={handleSubmit}>
                 <label>Name: <input type="text" name='name' value={characterInfo.name} onChange={(e) => handleInputChange('name', e.target.value)} /></label>
                 <br />
                 <label>Race: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
                 <br />
-                <label>Class: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
+                <label>Class: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('class', e.target.value)} /></label>
                 <br />
                 <label>Race: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
                 <br />
