@@ -1,23 +1,60 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainMenu from './Pages/MainMenu/MainMenu';
-import AboutPage from './Pages/AboutPage/AboutPage';
-import SettingsPage from "./Pages/SettingsPage/SettingsPage";
-import WelcomePage  from "./Pages/WelcomePage/WelcomePage";
-import CreatePage from "./Pages/CreatePage/CreatePage";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import MainMenu from './Pages/MainMenu';
+import AboutPage from './Pages/AboutPage';
+import WelcomePage  from "./Pages/WelcomePage";
+import PlayGamePage from './Pages/PlayGamePage';
+import CreatePage from "./Pages/CreatePage";
+import Layout from "../src/Layout";
 
-
-function Paths() {
+const Paths = () => {
   return (
-    <BrowserRouter>
+    
+    <Router>
       <Routes>
-        <Route path="/" element={<WelcomePage />} />
-        <Route path="/main-menu" element={<MainMenu />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route path="/create" element={<CreatePage />} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <WelcomePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <AboutPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/create"
+          element={
+            <Layout>
+              <CreatePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/play"
+          element={
+            <Layout>
+              <PlayGamePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/main-menu"
+          element={
+            <Layout>
+              <MainMenu />
+            </Layout>
+          }
+        />
       </Routes>
-    </BrowserRouter>
+    </Router>
+    
   );
-}
+};
 
 export default Paths;

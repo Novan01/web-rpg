@@ -1,0 +1,11 @@
+  .about-page-container {
+    color: white;
+    margin-top: 20vh;
+    cursor: default;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px; /* Add padding for better readability and spacing */
+    text-align: center; /* Center-align text */
+    position: absolute;
+  }
+
+ 
