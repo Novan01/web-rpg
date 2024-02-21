@@ -7,7 +7,7 @@ Character creation - saved to JSON (MongoDB)
 
 Name
 Race - Elf, Human, Half-Elf, Dwarf, Halfling, 
-Race - Bad guys : Orc, Goblin, Drow, Tiefling
+Race - Bad guys : Orc, Goblin, Drow, Tiefling - ignore
 Class - Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin, Ranger, Rouge, Sorcerer, Warlock, Wizard
 Stats 
     - Strength
@@ -106,19 +106,31 @@ function CreatePage() {
     return (
         <div className="character-creator">
             <h3>Create your Character</h3>
-            <form onSubmit={handleSubmit}>
-                <label>Name: <input type="text" name='name' value={characterInfo.name} onChange={(e) => handleInputChange('name', e.target.value)} /></label>
-                <br />
-                <label>Race: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
-                <br />
-                <label>Class: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('class', e.target.value)} /></label>
-                <br />
-                <label>Race: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
-                <br />
-                <label>Race: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
-                <br />
-            </form>
+            
+            <div>
+                <form onSubmit={handleSubmit}>
+                    <label>Name: <input type="text" name='name' value={characterInfo.name} onChange={(e) => handleInputChange('name', e.target.value)} /></label>
+                    <br />
+                    <label>Race: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('race', e.target.value)} /></label>
+                    <br />
+                    <label>Class: <input type="text" name='race' value={characterInfo.race} onChange={(e) => handleInputChange('class', e.target.value)} /></label>
+                    <br />
+                </form>
+            </div>
+
+            <div className='stats'>
+                <h4>Stats</h4>
+                <span className='stat' title="determines a character's ability to wield heavy weapons, carry heavy loads, and perform feats of raw physical power">STR</span>
+                <span>DEX</span>
+                <span>CON</span>
+                <span>INT</span>
+                <span>WIS</span>
+                <span>CHA</span>
+
+            </div>
         </div>
+
+        
         
     );
 };
