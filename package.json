@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Novan01/web-rpg/issues"
   },
-  "homepage": "https://github.com/Novan01/web-rpg#readme"
+  "homepage": "https://github.com/Novan01/web-rpg#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
